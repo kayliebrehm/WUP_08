@@ -25,3 +25,29 @@ summary.lm(simp)
 ```
 
 ## Prediction Model (for the length of a bear who has a neck of 17, 22 and 26)
+
+
+```{r}
+new <- data.frame(NECK=c(17,22,26))
+predict(simp,new)
+predict(simp,new,se.fit=TRUE)
+```
+
+## Length to Chest Model
+
+```{r}
+chesty <- lm(LENGTH~CHEST,data=bears)
+plot(LENGTH~CHEST,data=bears)
+abline(chesty)
+summary.lm(chesty)
+```
+
+
+
+## Prediction Model (for the length of a bear who has a chest of 17, 22 and 26)
+
+```{r}
+new <- data.frame(CHEST=c(17,22,26))
+predict(chesty,new)
+predict(chesty,new,se.fit=TRUE)
+```
