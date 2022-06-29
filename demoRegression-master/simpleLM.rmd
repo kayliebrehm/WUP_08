@@ -68,6 +68,8 @@ predict(chesty,new,se.fit=TRUE)
 The prediction for the height of a bear with a chest size of 17 is about 39.6. The prediction for the height of a bear with a chest size of 22 is about 44.7. The prediction for the height of a bear with a chest size of 26 is about 48.8. The df value for this prediction chart is 52. The residual scale value is about 4.9.
 
 
-#Conclusion
+# Conclusion
+
+The adjusted R-square for the chest model is 0.79 while the adjusted R-square for the neck model is 0.75. The better model is the chest one because the adjusted R-square value is higher.
 
 
