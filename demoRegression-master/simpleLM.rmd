@@ -64,3 +64,10 @@ new <- data.frame(CHEST=c(17,22,26))
 predict(chesty,new)
 predict(chesty,new,se.fit=TRUE)
 ```
+
+The prediction for the height of a bear with a chest size of 17 is about 39.6. The prediction for the height of a bear with a chest size of 22 is about 44.7. The prediction for the height of a bear with a chest size of 26 is about 48.8. The df value for this prediction chart is 52. The residual scale value is about 4.9.
+
+
+#Conclusion
+
+
