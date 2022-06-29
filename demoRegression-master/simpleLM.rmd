@@ -50,6 +50,9 @@ abline(chesty)
 summary.lm(chesty)
 ```
 
+The graph shows a stronger, still positive correlation between the length of bear and size of chest. There are not as many outliers along the line of best fit.
+
+The adjusted R-square of this data is about 0.79.
 
 
 ## Prediction Model 
