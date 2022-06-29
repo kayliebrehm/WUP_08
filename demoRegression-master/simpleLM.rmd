@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Simple regression model
+# Data
 
 ```{r}
 bears <- read.csv(file="BEARS.csv",header = TRUE)
@@ -28,7 +28,9 @@ The graph shows a somewhat weak, but still positive correlation between the leng
 
 The adjusted R-square of this data is about 0.75.
 
-## Prediction Model (for the length of a bear who has a neck of 17, 22 and 26)
+## Prediction Model 
+
+### (for the length of a bear who has a neck of 17, 22 and 26)
 
 
 ```{r}
@@ -36,6 +38,8 @@ new <- data.frame(NECK=c(17,22,26))
 predict(simp,new)
 predict(simp,new,se.fit=TRUE)
 ```
+
+The prediction for the height of a bear with a neck size of 17 is about 52.8. The prediction for the height of a bear with a neck size of 22 is about 70.0. The prediction for the height of a bear with a neck size of 26 is about 67.6. The df value for this prediction chart is 52. The residual scale value is about 5.4.
 
 ## Length to Chest Model
 
@@ -48,7 +52,9 @@ summary.lm(chesty)
 
 
 
-## Prediction Model (for the length of a bear who has a chest of 17, 22 and 26)
+## Prediction Model 
+
+### (for the length of a bear who has a chest of 17, 22 and 26)
 
 ```{r}
 new <- data.frame(CHEST=c(17,22,26))
