@@ -24,6 +24,10 @@ abline(simp)
 summary.lm(simp)
 ```
 
+The graph shows a somewhat weak, but still positive correlation between the length of bear and size of neck. There are plenty of outliers that do not aline well with the line of best fit.
+
+The adjusted R-square of this data is about 0.75.
+
 ## Prediction Model (for the length of a bear who has a neck of 17, 22 and 26)
 
 
